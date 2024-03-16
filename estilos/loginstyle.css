@@ -9,7 +9,7 @@ html, body {
 
 .container{
     height: 100%;
-    background-image: url("/imagem/puzzle.png");
+    background-image: url("/Meuamor/imagem/puzzle.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
