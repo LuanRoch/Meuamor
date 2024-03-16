@@ -1,0 +1,96 @@
+* {
+margin: 0;
+padding: 0;
+}
+html, body {
+   font-family: "Nunito Sans", sans-serif;
+   height: 100%;
+}
+
+.container{
+    height: 100%;
+    background-image: url("/imagem/puzzle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.form {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateY(-50%) translateX(-50%);
+}
+
+input {
+   outline: 0;
+   background: #f2f2f2;
+   width: 100%;
+   border: 0;
+   margin: 45px 0 15px;
+   padding: 15px;
+   box-sizing: border-box;
+   font-size: 14px;
+   border-radius: 10px;
+
+}
+
+.login {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateY(-50%) translateX(-50%);
+   z-index: 1;
+   background: #FFFFFF;
+   max-width: 360px;
+   margin: 0 auto 100px;
+   padding: 45px;
+   text-align: center;
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+   border-radius: 5%;
+   background-color: mistyrose;
+}
+img{
+   width: 100%;
+   height: auto;
+
+}
+
+
+
+
+@media (max-width:991px) {
+   html {
+       font-size: 55%;
+   }
+   body {
+       padding: 0;
+   }
+   #menu-bars {
+       display: initial;
+   }
+   header {
+       left: -120%;
+   }
+   header.active {
+       left: 0%;
+   }
+   .cursor-1,
+   .cursor-2 {
+       display: none;
+   }
+}
+
+@media (max-width:450px) {
+   html {
+       font-size: 50%;
+   }
+   header {
+       width: 100%;
+   }
+   .experience .box-container .box {
+       padding-right: 0;
+   }
+}

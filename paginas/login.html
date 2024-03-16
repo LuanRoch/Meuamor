@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/estilos/loginstyle.css">
+    <title>Emo</title>
+</head>
+
+<body>
+    <div id="preloader">
+        <body class="centralize">
+            <div class="loading-cat centralize">
+                <div class="body"></div>
+                <div class="head">
+                    <div class="face"></div>
+                </div>
+                <div class="foot">
+                    <div class="tummy-end">
+                    </div>
+                    <div class="bottom">
+                    </div>
+                    <div class="legs left">
+                    </div>
+                    <div class="legs right">
+                    </div>
+                </div>
+                <div class="hands left">
+                </div>
+                <div class="hands right">
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div class="container">
+        <div class="login">
+            <form>
+
+                <input type="text" placeholder="Nome" id="login">
+                <input type="password" placeholder="Chave" id="senha">
+                <input type="submit" onclick="logar(); return false">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+
+<script src="/javascript/login.js"></script>
+<script>
+    $(window).on('load',function(){
+        $('#preloader .inner').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
+        $('body').delay(350).css({'overflow': 'visible'});
+
+    })
+</script>
+</html>
